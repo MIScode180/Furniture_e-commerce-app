@@ -1,5 +1,5 @@
 
-Overview
+Overview 
 
 A clean and responsive Furniture E-commerce Web App built using React 19, Appwrite, and Auth0.
 It lets users browse products, add to cart, review their orders, and proceed to a checkout page with a detailed Order Summary.
