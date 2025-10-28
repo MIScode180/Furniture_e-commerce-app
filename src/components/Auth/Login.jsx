@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React, { useState } from "react";
 // import { useDispatch } from "react-redux";
 // import { useNavigate, Link } from "react-router-dom";
@@ -138,11 +139,17 @@
 
 
 
+=======
+>>>>>>> 106236a (Fix: case-sensitive import for authSlice)
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import authConfig from "../../Appwrite/authConfig";
+<<<<<<< HEAD
 import { login, setError, setLoading } from "../../store/authSlice";
+=======
+import { login, setError, setLoading } from "../../store/AuthSlice";
+>>>>>>> 106236a (Fix: case-sensitive import for authSlice)
 import { FcGoogle } from "react-icons/fc";
 import { HiEye, HiEyeOff } from "react-icons/hi";
 
