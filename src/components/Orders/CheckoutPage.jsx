@@ -4,7 +4,7 @@ import { setOrdersLoading, setOrders, setOrdersError } from "../../store/ordersS
 import dataConfig from "../../appwrite/dataConfig";
 import { useNavigate } from "react-router-dom";
 import { ID } from "appwrite";
-import OrderSummary from "../../components/Orders/OrderSummary";
+import OrderSummary from "../Orders/OrderSummary";
 
 const CheckoutPage = () => {
   const dispatch = useDispatch();
