@@ -1,40 +1,7 @@
-<<<<<<< HEAD
-// // src/components/auth/Profile.jsx
-// import React from "react";
-// import { useSelector } from "react-redux";
-
-// const Profile = () => {
-//   const { user } = useSelector((state) => state.auth);
-
-//   if (!user) {
-//     return <p className="text-center mt-10">No user info available</p>;
-//   }
-
-//   return (
-//     <div className="max-w-lg mx-auto mt-10 p-6 rounded-lg shadow-md bg-white">
-//       <h2 className="text-2xl font-bold mb-4">My Profile</h2>
-//       <div className="space-y-3 text-gray-700">
-//         <p><strong>Name:</strong> {user.name || "Guest User"}</p>
-//         <p><strong>Email:</strong> {user.email}</p>
-//         <p><strong>User ID:</strong> {user.$id}</p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Profile;
-
-
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import authConfig from "../../Appwrite/authConfig";
 import { login } from "../../store/AuthSlice";
-=======
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import authConfig from "../../Appwrite/authConfig";
-import { login } from "../../store/AuthSlice";
->>>>>>> 106236a (Fix: case-sensitive import for authSlice)
 
 const Profile = () => {
   const { user } = useSelector((state) => state.auth);

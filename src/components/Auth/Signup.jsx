@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import authConfig from "../../Appwrite/authConfig";
-<<<<<<< HEAD
 import { login, setError, setLoading } from "../../store/AuthSlice";
 import { login, setError, setLoading } from "../../store/AuthSlice";
->>>>>>> 106236a (Fix: case-sensitive import for authSlice)
 import { FcGoogle } from "react-icons/fc";
 import { HiEye, HiEyeOff } from "react-icons/hi";
 
@@ -27,32 +25,6 @@ export default function Signup() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // Signup with email/password
-  // const handleSignup = async (e) => {
-  //   e.preventDefault();
-
-  //   if (form.password !== form.confirmPassword) {
-  //     dispatch(setError("Passwords do not match"));
-  //     return;
-  //   }
-
-  //   dispatch(setLoading(true));
-  //   try {
-  //     await authConfig.Signup({
-  //       name: form.name,
-  //       email: form.email,
-  //       password: form.password,
-  //     });
-  //     const currentUser = await authConfig.getCurrentUser();
-  //     dispatch(login(currentUser));
-  //     navigate("/profile");
-  //   } catch (err) {
-  //     dispatch(setError(err.message));
-  //   } finally {
-  //     dispatch(setLoading(false));
-  //   }
-  // };
-  // Signup with email/password
 const handleSignup = async (e) => {
   e.preventDefault();
 
