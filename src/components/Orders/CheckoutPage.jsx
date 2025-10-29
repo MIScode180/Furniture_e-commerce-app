@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setOrdersLoading, setOrders, setOrdersError } from "../../store/ordersSlice";
-import dataConfig from "../../appwrite/dataConfig";
+import  dataConfig  from "../../Appwrite/dataConfig";
 import { useNavigate } from "react-router-dom";
 import { ID } from "appwrite";
 import OrderSummary from "../Orders/OrderSummary";
