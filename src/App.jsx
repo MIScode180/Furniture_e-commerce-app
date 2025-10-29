@@ -35,6 +35,8 @@ import GalleryCollage from "./components/Gellery/GalleryCollage";
 
 // Redux
 import { useSelector } from "react-redux";
+import Order from "./pages/Order";
+
 
 // Private Route Wrapper
 function PrivateRoute({ children }) {
@@ -53,7 +55,7 @@ function HomePage() {
       <Gellery />
       <AboutUs />
       <ContactUs />
-      <Order />
+      
     </>
   );
 }
@@ -75,7 +77,7 @@ export default function App() {
 
         {/* Product Pages */}
         <Route path="/products" element={<ProductList />} />
-        <Route path="//products/:id" element={<ProductDetails />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
         {/* <Route path="/product/:id" element={<ProductCard />} /> */}
         <Route path="/checkoutpage" element={<CheckoutPage />} />
 
@@ -99,6 +101,9 @@ export default function App() {
             </ProtLayout>
           }
         />
+
+        //order page
+        <Route path="/order" element={<Order />} />
 
         {/* Cart Page */}
         <Route path="/cart" element={<Cart />} />

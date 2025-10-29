@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import { FaShoppingCart } from "react-icons/fa";
 
+
+
 const Navbar = () => {
   const dispatch = useDispatch();
   const { isAuthenticated, user } = useSelector((state) => state.auth);
@@ -47,7 +49,7 @@ const Navbar = () => {
         <li><Link to="/gallery">Gallery</Link></li>
         <li><Link to="/contactus">Contact Us</Link></li>
         <li><Link to="/aboutus">About Us</Link></li>
-        {isAuthenticated && <li><Link to="/order">My Orders</Link></li>}
+        {isAuthenticated && <li> <Link to="/order">My Orders</Link></li>}
 
         {/* Cart Icon */}
         <li className="relative">
